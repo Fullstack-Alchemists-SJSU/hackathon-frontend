@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-container {
+    @apply flex flex-row items-center justify-start px-8 h-16 bg-blue-700 z-[100] text-white font-medium;
+}
+
+.nav-logo {
+    @apply flex flex-row items-center max-w-[128px];
+}
+
+.nav-title {
+    @apply text-xl font-semibold mx-2;
+}

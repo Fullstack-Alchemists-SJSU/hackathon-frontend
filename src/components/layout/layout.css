@@ -1,0 +1,7 @@
+.layout-container{
+    @apply flex flex-1;
+}
+
+.layout-main {
+    @apply flex flex-row flex-1;
+}

@@ -1,0 +1,23 @@
+.chat-container {
+    @apply flex flex-col w-[80%] p-4;
+}
+
+.message-list-container {
+    @apply h-screen bg-slate-200 m-2 rounded-md p-2 overflow-y-scroll max-h-[85vh];
+}
+
+.message-input {
+    @apply flex-1 border-2 border-blue-400 focus:border-blue-600 outline-none rounded-lg p-2 w-full mx-2 mt-2 items-center align-middle;
+}
+
+.send-button {
+    @apply bg-blue-600 disabled:bg-blue-300 text-white rounded-lg p-2 mx-2;
+}
+
+.message-content {
+    @apply p-4 text-black border-b-[1px] border-blue-700 break-words whitespace-pre-line
+}
+
+.message-role {
+    @apply font-semibold text-blue-700 m-2;
+}

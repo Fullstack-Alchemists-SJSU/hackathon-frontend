@@ -1,9 +1,11 @@
-import Message from "./message";
+import Message from './message'
 
 type Chat = {
-    timestamp: string;
-    name: string;
-    messages: Message[];
+	id: number
+	timestamp: string
+	title: string
+	threadId: string
+	messages: Message[]
 }
 
-export default Chat;
+export default Chat

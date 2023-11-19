@@ -1,18 +1,12 @@
-import axios from "axios";
-import Message from "../models/message";
+import axios from 'axios'
+export const createNewChat = (email: string) => {
+	return axios.post('http://localhost:3000/api/chat/', {email})
+}
 
-export const newChatCompletion = (messages: Message[]) => {
-    return axios.post("https://api.openai.com/v1/chat/completions", {
-        model: "gpt-3.5-turbo-16k-0613",
-        messages: messages.map((message) => (
-            {
-                role:message.role,
-                content: message.content
-            }
-        )),
-    }, {
-        headers:{
-            "Authorization": `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
-        }
-    })
+export const getChatByEmail = (email: string) => {
+	return axios.get(`http://localhost:3000/api/chat/${email}`)
+}
+
+export const getMessagesByChatId = (chatId: number) => {
+	return axios.get(`http://localhost:3000/api/chat/${chatId}/messages`)
 }

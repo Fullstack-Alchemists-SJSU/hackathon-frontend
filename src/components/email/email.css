@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.email-container {
+	@apply flex flex-1 items-center text-center justify-center;
+}

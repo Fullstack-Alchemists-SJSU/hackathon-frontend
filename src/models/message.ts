@@ -1,7 +1,8 @@
 type Message = {
-    timestamp: string;
-    content: string;
-    role: string;
+	timestamp: string
+	content: string
+	role: string
+	chat: number
 }
 
-export default Message;
+export default Message
